@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coral Games</title>
+    <style>
+      .game-button {
+        height: 120px;
+        width: 120px;
+        border-radius: 20px;
+        margin: 10px;
+        background-color: lightskyblue;
+      }
+      .buttons {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .title {
+        font-family: 'Arial', Sans-Serif;
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .game-count {
+        font-family: 'Arial', Sans-Serif;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .changelogs {
+        font-family: 'Arial', Sans-Serif;
+        font-weight: bold;
+        text-align: center;
+      }
+      #PlayerUsername {
+        font-family: 'Arial', Sans-Serif;
+        font-weight: bold;
+        text-align: center;
+      }
+      body {
+        background-color: cornflowerblue;
+      }
+    </style>
+    <p id="PlayerUsername">h</p>
+  </head>
+  <body>
+  <script>
+    let player_username = prompt("Please enter your username:");
+
+    let container = document.getElementById("PlayerUsername");
+
+    if (player_username) {
+      container.innerHTML = "<h2>Welcome, <span style='color:blue;'>" 
+                            + player_username + 
+                            "</span>!</h2>";
+    } else {
+      container.innerHTML = "<p>No username entered.</p>";
+    }
+  </script>
+    <h1 class="title">Coral Games</h1>
+    <h2 class="game-count">Currently there are 17 games</h2>
+    <div class="buttons">
+      <button class="game-button" onclick="window.open('https://1games.io/repo', '_blank')">REPO</button>
+      <button class="game-button" onclick="window.open('https://1games.io/deer-adventure', '_blank')">DEEEEEER</button>
+      <button class="game-button" onclick="window.open('https://buckshotroulette.com/home', '_blank')">Buckshot Roulette</button>
+      <button class="game-button" onclick="window.open('https://thatsnot-myneighbor.io/', '_blank')">That's Not My Neighbor</button>
+      <button class="game-button" onclick="window.open('https://balatrogame.com/balatro-online/ ', '_blank')">Balatro</button>
+      <button class="game-button" onclick="window.open('https://eaglercraft.com/ ', '_blank')">Minecraft</button>
+      <button class="game-button" onclick="window.open('https://poki.com/', '_blank')">Poki</button>
+      <button class="game-button" onclick="window.open('https://coolmathgames.com/', '_blank')">Cool Math Games</button>
+      <button class="game-button" onclick="window.open('https://tria.ge/', '_blank')">Triage</button>
+      <button class="game-button" onclick="window.open('https://bongo.cat/', '_blank')">Bongo Cat</button>
+      <button class="game-button" onclick="window.open('https://rec0ded88.com/play-retro-games-online/n64/play-the-legend-of-zelda-ocarina-of-time/', '_blank')">Legend of Zelda - Ocarina of Time</button>
+      <button class="game-button" onclick="window.open('https://chess.com/', '_blank')">Chess</button>
+      <button class="game-button" onclick="window.open('https://www.numuki.com/game/super-mario-64/', '_blank')">Super Mario 64</button>
+      <button class="game-button" onclick="window.open('https://cookieclicker.ee/', '_blank')">Cookie Clicker</button>
+      <button class="game-button" onclick="window.open('https://windows93.net/', '_blank')">Windows 93</button>
+      <button class="game-button" onclick="window.open('https://kbhgames.com/game/ultrakill-prelude/', '_blank')">ULTRAKILL</button>
+      <button class="game-button" onclick="window.open('https://chromaticpipe.github.io/SRB2-WASM/', '_blank')">Sonic Robo Blast 2</button>
+
+    </div>
+    <div class="changelogs">
+      <h3>Version 2</h3>
+      <p>Added windows93.net</p>
+      <p>Added ULTRAKILL</p>
+      <h3>Version 3</h3>
+      <p>Added username system (does not save)</p>
+      <p>Added Sonic Robo Blast 2 (per Aaron's request)</p>
+      <p>Removed 2nd balatro button (it was mentioned twice)</p>
+    </div>
+  </body>
+</html>
